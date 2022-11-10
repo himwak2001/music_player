@@ -1,0 +1,163 @@
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Sintony', sans-serif;
+}
+
+.main_div{
+	width: 100vw;
+	height: 100vh;
+	background-color: #EDEDED;
+	display: grid;
+	place-items: center;
+}
+
+.music_container{
+	width: 25rem;
+	height: 35rem;
+	background-color: #F1F6F9;
+	border-radius: 2rem;
+	text-align: center;
+	padding: 2.5rem;
+	box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.2),
+		-0.5rem -0.5rem 1rem rgba(0, 0, 0, 0.2);
+}
+
+.music_container #title{
+	margin: 0.5rem 0rem 0.5rem 0rem;
+	word-spacing: 0.1rem;
+	color: #182747;
+	font-size: 1.7rem;
+	font-weight: bold;
+	text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.3);
+	text-transform: uppercase;
+	-webkit-line-clamp: 1;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+	white-space: normal;
+}
+
+.music_container #artist{
+	color: #BBBFCA;
+	text-transform: capitalize;
+	margin-bottom: 1.5rem;
+	font-weight: 400;
+	-webkit-line-clamp: 1;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+	white-space: normal;
+}
+
+#music-image{
+	width: 15rem;
+	height: 15rem;
+	margin: auto;
+	border-radius: 50%;
+	box-shadow: 0.2rem 0.2rem 1rem rgba(0, 0, 0, 0.2),
+		-0.2rem -0.2rem 1rem rgba(0, 0, 0, 0.2);
+}
+
+.material-symbols-outlined{
+	font-size: 3rem;
+	cursor: pointer;
+}
+
+.music_controlers{
+	width: 15rem;
+	display: flex;
+	justify-content: space-between;
+	margin: auto;
+	margin-top: 1rem;
+	align-items: center;
+}
+
+.music_controlers .main-button{
+	height: 4rem;
+	width: 4rem;
+	border-radius: 50%;
+	color: white;
+	background-color: #182747;
+	padding: 0.2rem;
+	position: relative;
+}
+
+.main-button #play{
+	padding-top: 0.3rem;
+	align-items: center;
+}
+
+.main-button:hover{
+	background-color: #748DA6;
+}
+
+#for:hover, #back:hover{
+	color: #748DA6;
+}
+
+.anime{
+	animation: rotatePlayer 20s linear infinite;
+}
+
+@keyframes rotatePlayer{
+	from{
+		transform: rotate(0deg);
+	}
+	to{
+		transform: rotate(360deg);
+	}
+}
+
+.progressbar-container{
+	width: 100%;
+	height: auto;
+	padding: 1rem 0;
+}
+
+.progress-div{
+	width: 100%;
+	height: 0.5rem;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07), 0px 2px 4px rgba(0, 0, 0, 0.07),
+		0px 4px 8px rgba(0, 0, 0, 0.07), 0px 8px 16px rgba(0, 0, 0, 0.07),
+		0px 16px 32px rgba(0, 0, 0, 0.07), 0px 32px 64px rgba(0, 0, 0, 0.07);
+	border-radius: 4rem;
+	position: relative;
+	margin-top: 0.5rem;
+	transition: all 1s linear;
+	-moz-transition: all 1s linear;
+	-o-transition: all 1s linear;
+	-webkit-transition: all 1s linear;
+	cursor: pointer;
+	-webkit-appearance: none;
+	appearance: none;
+}
+
+.progress-bar{
+	position: absolute;
+	width: 0%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background-color: #47B5FF;
+	border-radius: 4rem;
+/* 	transition: width 1s linear;
+	-moz-transition: width 1s linear;
+	-o-transition: width 1s linear;
+	-webkit-transition: width 1s linear;
+	cursor: pointer;
+	-webkit-appearance: none;
+	appearance: none; */
+}
+
+.progress-duration-meter{
+	display: flex;
+	justify-content: space-between;
+	font-size: 1.2rem;
+}

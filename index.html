@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>replit</title>
+	<link rel="stylesheet"
+		href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+	<link href="style.css" rel="stylesheet" type="text/css" />
+	<link href="https://fonts.googleapis.com/css2?family=Sintony:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<div class="main_div">
+		<div class="music_container">
+			<h2 id="title">Wada Karo</h2>
+			<h3 id="artist">Kishore Kumar | Lata Mangeshkar</h3>
+			<div class="image-container">
+				<img src="music_1.jpg" alt="music_image" id="music-image" />
+			</div>
+			<audio src="wada_karo.mp3" class="audio"></audio>
+
+			<div class="progressbar-container" id="progress-container">
+				<div class="progress-duration-meter">
+					<div id="current-time">0:00</div>
+					<div id="duration">4:48</div>
+				</div>
+				<div class="progress-div" id="progress-div">
+					<div class="progress-bar" id="progress-bar"></div>
+				</div>
+			</div>
+
+			<div class="music_controlers">
+				<span class="material-symbols-outlined" title="Backward" id="back">
+					fast_rewind
+				</span>
+				<div class="main-button">
+					<span class="material-symbols-outlined" title="Play" id="play">
+						play_arrow
+					</span>
+				</div>
+				<span class="material-symbols-outlined" title="Forward" id="for">
+					fast_forward
+				</span>
+			</div>
+		</div>
+	</div>
+	<script src="script.js"></script>
+
+	<!--
+  This script places a badge on your repl's full-browser view back to your repl's cover
+  page. Try various colors for the theme: dark, light, red, orange, yellow, lime, green,
+  teal, blue, blurple, magenta, pink!
+  -->
+	<script src="https://replit.com/public/js/replit-badge.js" theme="blue" defer></script>
+</body>
+
+</html>
